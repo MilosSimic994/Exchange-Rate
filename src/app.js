@@ -13,7 +13,8 @@ const calcluate = () => {
   fetch(`https://api.exchangerate-api.com/v4/latest/${currency_one}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      console.log(data.rates);
+
       const rate = data.rates[currency_two];
       rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
 

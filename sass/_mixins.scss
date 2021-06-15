@@ -1,0 +1,17 @@
+@mixin sDesk {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin mob {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
